@@ -1,0 +1,6 @@
+biopython==1.74
+keras==2.2.5
+numpy==1.16.5
+defopt
+pandas
+tensorflow==1.14.0
