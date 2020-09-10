@@ -1,0 +1,6 @@
+biopython
+Bio
+pandas
+numpy
+keras
+defopt
