@@ -7,8 +7,12 @@ ARG pip_install="biopython==1.74 keras==2.2.5 numpy==1.16.5 defopt pandas"
 
 RUN apt update && \
     apt install -y  $depends && \
-    pip3 install $pip_install && \
-    pip3 install .
+    pip3 install $pip_install
+
+WORKDIR /tmp
+ADD . ./
+
+RUN pip3 install .
 
 
 CMD bash
