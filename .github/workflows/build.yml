@@ -26,6 +26,6 @@ jobs:
         docker push $IMAGE_ID:$VERSION
     - name: TEST
       run: |
-        docker run -v `pwd`:`pwd` -w `pwd` newbuild bash -c "DeepCPP.py --fasta rawdata/human_lncsorf.fa  --prefix Human "
-        head Human_normal_predict_results.csv
-        head Human_sorf_predict_results.csv
+        docker run -v `pwd`:`pwd` -w `pwd` newbuild bash -c "DeepCPP.py  rawdata/human_lncsorf.fa   HumanResult human "
+        head HumanResult_normal_predict_results.csv
+        head HumanResult_sorf_predict_results.csv
