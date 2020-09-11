@@ -11,7 +11,7 @@ setup(
     package_data={'': ['models/*.*']},
     entry_points={
             "console_scripts": [
-                "DeepCPP.py = deepcpp.utils_lncRNA:run",
+                "DeepCPP.py=deepcpp.utils_lncRNA:run",
             ]},
     url='',
     license='',
