@@ -4,7 +4,7 @@ from setuptools import setup
 
 
 setup(
-    name='NCResNet-wrapper',
+    name='DeepCPP-wrapper',
     version='0.1.0',
     packages=['deepcpp'],
     include_package_data=True,
