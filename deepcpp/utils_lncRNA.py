@@ -489,6 +489,7 @@ def run_single_model(fasta, model_dir, m_type, d_type, output):
     bs = 256
     probas = np.zeros((len(testdata), 2))
     for filename in model_name:
+        print(f'loading model:{model_dir}{filename}')
         model = load_model(model_dir + filename)
         pre_rst = model.predict(testdata)  # predict predict_classes
         probas = probas + pre_rst
