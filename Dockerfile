@@ -13,6 +13,6 @@ WORKDIR /tmp
 ADD . ./
 
 RUN pip3 install .
-
+RUN rm -rf /tmp/*
 
 CMD bash
